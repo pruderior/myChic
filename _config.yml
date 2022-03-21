@@ -4,19 +4,19 @@ navname: 张仙客来长安
 # navigatior items
 nav:
   Posts: /archives
-  Categories: /category
+  #Categories: /category
   Tags: /tag
-  #About: /about
+  Friends: /friends
 
 # favicon
-favicon: /bulb.png
+favicon: /arena.svg
 
 # Profile
 nickname: 张仙客
 
 ### this variable is MarkDown form.
 # description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** <br>Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
-description: 走吧，我们去寻找生命的湖  <br>Do not go gentle into that good night <br> Rage, rage against the dying of the light
+description: 走吧，我们去寻找生命的湖
 avatar: /image/avatar.jpg
 
 # main menu navigation
