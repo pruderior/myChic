@@ -1,7 +1,7 @@
 <div class="container profile-container">
     <div class="intro">
         <div class="avatar">
-            <a href="<%- url_for(theme.nav.Posts) %>"><img src="<%- url_for(theme.avatar) %>"></a>
+            <a href="<%- url_for(theme.nav.Posts) %>"><img id='avatar_img'src="<%- url_for(theme.avatar) %>"></a>
         </div>
         <div class="nickname"><%- theme.nickname %></div>
         <div class="description"><%- markdown(theme.description) %></div>
@@ -21,3 +21,16 @@
         </div>
     </div>
 </div>
+<script>
+    // this function is used to check current theme before page loaded.
+    (() => {
+        const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+        const isDark = currentTheme === 'dark';
+        const pagebody = document.getElementsByTagName('body')[0]
+        if (isDark) {
+            document.querySelector('#avatar_img').setAttribute('src', '/image/zzz_night.jpg')
+        } else {
+            document.querySelector('#avatar_img').setAttribute('src', '/image/zzz_day.jpg')
+        }
+    })();
+</script>

@@ -18,6 +18,7 @@ nickname: 张仙客
 # description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** <br>Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
 description: 走吧，我们去寻找生命的湖
 avatar: /image/zzz_day.jpg
+avatar_night: /image/zzz_night.jpg
 
 # main menu navigation
 ## links key words should not be changed.
